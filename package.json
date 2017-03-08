@@ -1,0 +1,96 @@
+{
+    "name": "linter-weex",
+    "version": "0.0.7",
+    "private": true,
+    "description": "A plugin for Thera Linter providing an interface to Weex.",
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "engines": {
+        "atom": ">=1.4.0 <2.0.0"
+    },
+    "configSchema": {
+        "enabledScopes": {
+            "description": "",
+            "type": "array",
+            "default": [
+                "source.we"
+            ],
+            "items": {
+                "type": "string"
+            }
+        }
+    },
+    "scripts": {
+        "test": "apm test",
+        "lint": "eslint ."
+    },
+    "keywords": [
+        "weex",
+        "lint"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": ""
+    },
+    "homepage": "",
+    "dependencies": {
+        "async": "1.5.2",
+        "atom-linter": "^7.0.0",
+        "atom-package-deps": "^4.0.1",
+        "colors": "1.1.2",
+        "commander": "2.9.0",
+        "glob": "7.0.3",
+        "jshint": "2.9.2",
+        "parse-glob": "3.0.4",
+        "path-parse": "1.0.5",
+        "request": "2.72.0",
+        "strip-json-comments": "^2.0.1",
+        "tiny-promisify": "^0.1.1",
+        "xml": "1.0.1"
+    },
+    "devDependencies": {
+        "eslint": "^3.0.1",
+        "eslint-config-airbnb-base": "^5.0.0",
+        "eslint-plugin-import": "^1.10.2"
+    },
+    "eslintConfig": {
+        "rules": {
+            "comma-dangle": [
+                "error",
+                "never"
+            ],
+            "global-require": "off",
+            "import/no-unresolved": [
+                "error",
+                {
+                    "ignore": [
+                        "atom"
+                    ]
+                }
+            ],
+            "import/no-extraneous-dependencies": "off"
+        },
+        "extends": "airbnb-base",
+        "globals": {
+            "atom": true
+        },
+        "env": {
+            "es6": true,
+            "node": true
+        }
+    },
+    "package-deps": [
+    ],
+    "providedServices": {
+        "linter": {
+            "versions": {
+                "1.0.0": "provideLinter"
+            }
+        }
+    },
+    "readme": "",
+    "readmeFilename": ""
+}

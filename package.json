@@ -1,6 +1,6 @@
 {
     "name": "linter-weex",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "private": true,
     "description": "A plugin for Thera Linter providing an interface to Weex.",
     "main": "lib/index.js",

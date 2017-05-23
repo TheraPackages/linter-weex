@@ -16,7 +16,8 @@
             "description": "",
             "type": "array",
             "default": [
-                "source.we"
+                "source.we",
+				"source.weexvue"
             ],
             "items": {
                 "type": "string"
